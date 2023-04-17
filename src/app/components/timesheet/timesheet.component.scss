@@ -1,0 +1,118 @@
+h2 {
+    text-align: center;
+}
+
+.cards {
+    margin: auto;
+    width: 60%;
+}
+
+mat-card {
+    width: 100%;
+    margin: auto;
+}
+
+// input {
+//     width: 50%;
+// }
+
+mat-form-field {
+    width: calc(100% - 40px);    
+}
+
+button {
+    display:inline;
+    // width: 30px;
+    // height: 50px;
+}
+
+.hours {
+    min-height: 200px;
+    margin-top:30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hours-input {
+    max-width: 75px;
+    margin-left: 15px;
+    text-align: center;
+}
+
+.emp-name {
+    margin-left: 5px;
+    text-align: center
+}
+
+.days-of-week {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total-cell {
+    text-align: center;
+}
+
+// html, body{
+//     height:100%
+// }
+// body{
+//     margin:0;;
+// }
+// .main-container {
+//     display: flex;
+//     align-items: center;
+//     flex-direction: row;
+//     height: calc(100% - 64px);
+// }
+// .hours {
+//     min-height: 200px;
+//     margin-top: 30px;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+// }
+// .hours-input {
+//     max-width: 75px;
+//     margin-left: 15px;
+//     text-align: center;
+// }
+// .total-cell {
+//     text-align: center;
+// }
+// h2 {
+//     text-align: center;
+// }
+// .cards {
+//     margin: auto;
+// }
+// mat-form-field {
+//     width: calc(100% - 40px);
+// }
+// .hours {
+//     margin-top: 30px;
+// }
+// table {
+//     border-collapse: collapse;
+// }
+// th {
+//     border-bottom: 1px solid black;
+//     &:not(:first-child) {
+//         padding-left: 15px;
+//     }
+// }
+// td {
+//     text-align: center;
+//     padding: 10px 0px;
+// }
+// tr td {
+//     border-bottom:1pt solid #C1C1C1;
+// }
+// .submit {
+//     width: 75px;
+//     margin-left: auto;
+//     margin-top: 15px;
+// }
