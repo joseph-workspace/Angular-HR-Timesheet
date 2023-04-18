@@ -17,7 +17,9 @@ export class DepartmentsComponent {
   ) { }
 
   ngOnInit(): void {
-    this.departments = this.departmentsService.departments;
+    this.departmentsService.getDepartments().subscribe(departments => {
+      this.departments = departments;
+    });
   }
 
   goToDepartment(departmentId: string): void {
