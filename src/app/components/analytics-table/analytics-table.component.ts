@@ -10,60 +10,60 @@ export class AnalyticsTableComponent implements OnInit {
   @Input()
   departmentId: string | undefined;
 
-  weekdays: string[] = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+  weekdays: string[] = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
   employees: Employee[] = [];
   employeeData: Employee[] = [
     {
       departmentId: '1',
-      Friday: 6,
+      friday: 6,
       id: '1',
-      Monday: 4,
+      monday: 4,
       name: 'a',
       payRate: 70,
-      Saturday: 7,
-      Sunday: 6,
-      Thursday: 5,
-      Tuesday: 3,
-      Wednesday: 4
+      saturday: 7,
+      sunday: 6,
+      thursday: 5,
+      tuesday: 3,
+      wednesday: 4
     },
     {
       departmentId: '1',
-      Friday: 2,
+      friday: 2,
       id: '2',
-      Monday: 4,
+      monday: 4,
       name: 'b',
       payRate: 63,
-      Saturday: 1,
-      Sunday: 2,
-      Thursday: 3,
-      Tuesday: 3,
-      Wednesday: 4
+      saturday: 1,
+      sunday: 2,
+      thursday: 3,
+      tuesday: 3,
+      wednesday: 4
     },
     {
       departmentId: '2',
-      Friday: 9,
+      friday: 9,
       id: '3',
-      Monday: 8,
+      monday: 8,
       name: 'c',
       payRate: 76,
-      Saturday: 7,
-      Sunday: 5,
-      Thursday: 4,
-      Tuesday: 7,
-      Wednesday: 5
+      saturday: 7,
+      sunday: 5,
+      thursday: 4,
+      tuesday: 7,
+      wednesday: 5
     },
     {
       departmentId: '3',
-      Friday: 2,
+      friday: 2,
       id: '4',
-      Monday: 3,
+      monday: 3,
       name: 'd',
       payRate: 56,
-      Saturday: 3,
-      Sunday: 2,
-      Thursday: 0,
-      Tuesday: 4,
-      Wednesday: 5
+      saturday: 3,
+      sunday: 2,
+      thursday: 0,
+      tuesday: 4,
+      wednesday: 5
     },
   ];
   constructor() { }
@@ -73,8 +73,8 @@ export class AnalyticsTableComponent implements OnInit {
   }
 
   getTotalHours(employee: Employee): number {
-    return employee.Monday + employee.Tuesday + employee.Wednesday
-        + employee.Thursday + employee.Friday + employee.Saturday + employee.Sunday;
+    return employee.monday + employee.tuesday + employee.wednesday
+        + employee.thursday + employee.friday + employee.saturday + employee.sunday;
   }
 
 }

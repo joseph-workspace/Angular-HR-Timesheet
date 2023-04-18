@@ -16,7 +16,7 @@ export class TimesheetComponent {
   employeeNameFC = new FormControl('', this.nameValidator());
   employees: Employee[] = [];
   employeeId = 0;
-  weekdays: string[] = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+  weekdays: string[] = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'];
 
   constructor(
     private route: ActivatedRoute,
@@ -37,13 +37,13 @@ export class TimesheetComponent {
         departmentId: this.department?.id,
         name: this.employeeNameFC.value,
         payRate: Math.floor(Math.random() * 50) + 50,
-        Monday: 0,
-        Tuesday: 0,
-        Wednesday: 0,
-        Thursday: 0,
-        Friday: 0,
-        Saturday: 0,
-        Sunday: 0
+        monday: 0,
+        tuesday: 0,
+        wednesday: 0,
+        thursday: 0,
+        friday: 0,
+        saturday: 0,
+        sunday: 0
       });
 
       this.employeeNameFC.setValue('');
@@ -65,8 +65,8 @@ export class TimesheetComponent {
   }
 
   getTotalHours(employee: Employee): number {
-    return employee.Monday + employee.Tuesday + employee.Wednesday 
-      + employee.Thursday + employee.Friday + employee.Saturday + employee.Sunday;
+    return employee.monday + employee.tuesday + employee.wednesday 
+      + employee.thursday + employee.friday + employee.saturday + employee.sunday;
   }
 
   deleteEmployee(index: number): void {
