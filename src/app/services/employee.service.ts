@@ -40,5 +40,7 @@ export class EmployeeService {
       })
     );
   }
-
+  updateEmployeeHours(employee: Employee): any {
+    this.db.collection('employee-hours').doc(employee.id).set(employee);
+  }
 }
